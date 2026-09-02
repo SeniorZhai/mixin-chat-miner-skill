@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mixin-chat-miner"
+version = "0.1.0"
+description = "Export bounded, local snapshots from Mixin Desktop chat history"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+dependencies = []
+
+[project.scripts]
+mixin-chat-miner = "mixin_chat_miner.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
